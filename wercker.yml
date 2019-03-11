@@ -49,7 +49,7 @@ deploy:
     - internal/docker-push:
       username: $DOCKERHUB_USERNAME
       password: $DOCKERHUB_PASSWORD
-      cmd: /pipeline/source/gopipeline
+      cmd: gopipeline
       tag: latest
       repository: aleryon/gopipeline
 
