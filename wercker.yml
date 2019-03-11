@@ -50,8 +50,7 @@ deploy:
       username: $DOCKERHUB_USERNAME
       password: $DOCKERHUB_PASSWORD
       cmd: /pipeline/source/gopipeline
-      port: "8080"
       tag: latest
-      repository: orionthewake/gopipeline
-      registry: https://registry.hub.docker.com
+      repository: aleryon/gopipeline
+
       
