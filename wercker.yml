@@ -43,3 +43,15 @@ build:
         name: go test
         code: |
           go test ./...
+
+deploy:
+  steps:
+    - internal/docker-push:
+      username: $DOCKERHUB_USERNAME
+      password: $DOCKERHUB_PASSWORD
+      cmd: /pipeline/source/gopipeline
+      port: "8080"
+      tag: latest
+      repository: orionthewake/gopipeline
+      registry: https://registry.hub.docker.com
+      
